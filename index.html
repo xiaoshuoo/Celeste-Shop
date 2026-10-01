@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CELESTE SHOP — Deadlock</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <a href="#" class="logo">CELESTE SHOP</a>
+    
+    <button id="cartBtn">Корзина (<span id="cartCount">0</span>)</button>
+  </header>
+
+
+  <main>
+    <h1>Снаряжение для тех,<br>кто не отступает</h1>
+    <p class="muted">Предметы Deadlock по внутриигровой стоимости душ.</p>
+
+    <h2>Витрина</h2>
+
+    <div id="products"></div>
+  </main>
+
+
+  <footer>
+    Твой следующий ход начинается здесь.
+  </footer>
+
+
+  <div class="modal" id="productModal">
+    <div class="window">
+      <button class="close">X</button>
+
+      <div class="media" id="modalImage"></div>
+      <div class="media" id="modalVideo"></div>
+
+      <h3 id="modalTitle"></h3>
+      <p class="price" id="modalPrice"></p>
+      <p id="modalDesc"></p>
+
+      <button id="modalBuyBtn">Купить</button>
+
+      <h4>Отзывы</h4>
+      <div id="modalReviews"></div>
+
+      <h4>Оставить отзыв</h4>
+      <input id="reviewAuthor" placeholder="Ваше имя">
+
+      <select id="reviewRating">
+        <option value="5">5 ★</option>
+        <option value="4">4 ★</option>
+        <option value="3">3 ★</option>
+        <option value="2">2 ★</option>
+        <option value="1">1 ★</option>
+      </select>
+
+      <textarea id="reviewText" placeholder="Ваш отзыв" rows="3"></textarea>
+
+      <button id="reviewSendBtn">Отправить отзыв</button>
+
+      <p class="muted" id="reviewMessage"></p>
+    </div>
+  </div>
+
+
+  <div class="modal" id="cartModal">
+    <div class="window">
+      <button class="close">X</button>
+      
+      <h3>Корзина</h3>
+      <div id="cartItems"></div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
